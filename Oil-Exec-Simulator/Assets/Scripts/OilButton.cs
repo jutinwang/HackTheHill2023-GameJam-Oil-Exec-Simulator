@@ -9,6 +9,8 @@ public class OilButton : MonoBehaviour
 {
     public double profits = 0;
 
+    public double currentFunds = 0;
+
     public double moneyEarned = 80.0; 
 
     public int counter = 0;
@@ -31,5 +33,7 @@ public class OilButton : MonoBehaviour
             moneyEarned += 10.0;
             counter = 0;
         }
+
+
     }
 }
