@@ -40,7 +40,9 @@ public class OilButton : MonoBehaviour
             moneyEarned += 10.0;
             counter = 0;
         }
+    }
 
-
+    public void buyItem(float price){
+        currentFunds -= price;
     }
 }
