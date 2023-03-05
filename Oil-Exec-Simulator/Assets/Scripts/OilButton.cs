@@ -13,11 +13,13 @@ public class OilButton : MonoBehaviour
 
     public double moneyEarned = 80.0; 
 
-    public int counter = 0;
+    public int counter = 1;
 
     public Image temperatureIndicator;
 
     public static OilButton instance;
+
+    public GameObject endingScreen;
 
     private void Awake(){
         instance = this;
@@ -36,16 +38,18 @@ public class OilButton : MonoBehaviour
 
     //test function for testing onClick()
     public void Test(){
-        counter++;
         profits += moneyEarned;
         currentFunds += moneyEarned;
         MoneyUpdate.instance.updateMoney(currentFunds);
         print(currentFunds);
-        if (counter > 10){
+        if (currentFunds >= 100000000*counter){
             curTemp ++;
+            counter++;
+            if(counter >= 11){
+                endingScreen.SetActive(true);
+            }
             temperatureIndicator.fillAmount = (float)curTemp/(float)maxTemp;
             IconManager.instance.changeImage();
-            counter = 0;
         }
     }
 
