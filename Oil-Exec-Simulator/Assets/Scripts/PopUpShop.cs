@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,4 +13,4 @@ public class NewBehaviourScript : MonoBehaviour
         //popUpText.text = text;
         //animator.SetTrigger("pop");
     }
-}
+}*/
