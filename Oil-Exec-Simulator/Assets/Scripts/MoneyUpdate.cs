@@ -6,10 +6,17 @@ using UnityEngine.UI;
 public class MoneyUpdate : MonoBehaviour
 {
     public Text Textfield;
-    public double currentFunds = OilButton.currentFunds;
+    //public double currentFunds = OilButton.currentFunds;
 
-    public void updateMoney(ref currentFunds){
-        Textfield.text = currentFunds;
+    public static MoneyUpdate instance;
+
+    private void Awake(){
+        instance = this;
+    }
+
+    public void updateMoney(double value){
+        print("Here: " + Textfield.text);
+        Textfield.text = string.Format("{0:N2}", value);
     }
 
 }
