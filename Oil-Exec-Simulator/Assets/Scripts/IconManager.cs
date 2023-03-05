@@ -9,6 +9,7 @@ public class IconManager : MonoBehaviour
     public Texture2D tester;
     public Sprite newSprite;
     public Image newImage;
+    private int counter = 0;
 
     public static IconManager instance;
 
@@ -16,10 +17,19 @@ public class IconManager : MonoBehaviour
         instance = this;
     }
 
+    public void incrementCounter(){
+        counter++;
+    }
+
+    public int getCounter(){
+        return counter;
+    }
+
     public void changeImage(){
-        tester = iconTextures[1];
-        print(iconTextures[1]);
-        newSprite = Sprite.Create(iconTextures[1], new Rect(0, 0, tester.width, tester.height), new Vector2(0.5f, 0.5f), 100.0f);
+        tester = iconTextures[counter];
+        if (getCounter() != 4){
+            incrementCounter();
+        }
         instance.gameObject.GetComponentInChildren<RawImage>().texture = tester;
     }
 }
