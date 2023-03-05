@@ -22,6 +22,8 @@ public class autoClicker : MonoBehaviour
         if (OilButton.instance.currentFunds >= employeePrice){
             OilButton.instance.buyItem(employeePrice);
             clickerEmployee.Add(Time.time);
+            employeePrice = employeePrice * 2;
+            MoneyUpdate.instance.updateEmployeeSalary(employeePrice);
         }
     }
 
