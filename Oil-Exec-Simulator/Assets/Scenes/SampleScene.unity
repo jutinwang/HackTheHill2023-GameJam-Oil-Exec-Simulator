@@ -2355,6 +2355,9 @@ MonoBehaviour:
   profits: 0
   moneyEarned: 80
   counter: 0
+  tempBarFill: {fileID: 0}
+  curTemp: 0
+  maxTemp: 0
 --- !u!1 &1440128684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,7 +2810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1623331017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3309,6 +3312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1866942467}
+  - component: {fileID: 1866942468}
   m_Layer: 5
   m_Name: baron_icon
   m_TagString: Untagged
@@ -3332,6 +3336,27 @@ Transform:
   m_Father: {fileID: 1048160307}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1866942468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866942466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88cc53c8f44848f583376b3636299ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconTextures:
+  - {fileID: 2800000, guid: a2d6f92ce6cf04035a5ef4ed09eb9e9b, type: 3}
+  - {fileID: 2800000, guid: 76f94105ba9f345efad15317427f9615, type: 3}
+  - {fileID: 2800000, guid: 3af7f47987c8e420bb0e973c4a77891a, type: 3}
+  - {fileID: 2800000, guid: f56a44a9f8a1f45b8a23f01da3e52e63, type: 3}
+  - {fileID: 2800000, guid: 428ea274aece744fdbea2bfa8037173b, type: 3}
+  tester: {fileID: 0}
+  newSprite: {fileID: 0}
+  newImage: {fileID: 0}
 --- !u!1 &1908338705
 GameObject:
   m_ObjectHideFlags: 0

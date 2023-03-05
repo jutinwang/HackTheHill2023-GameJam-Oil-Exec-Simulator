@@ -25,7 +25,7 @@ public class OilButton : MonoBehaviour
         print(profits);
         if (counter > 10){
             curTemp ++;
-            tempBarFill.fillAmount = (float)curTemp/(float)maxTemp;
+            //tempBarFill.fillAmount = (float)curTemp/(float)maxTemp;
             IconManager.instance.changeImage();
             print("profits increased!");
             moneyEarned += 10.0;
