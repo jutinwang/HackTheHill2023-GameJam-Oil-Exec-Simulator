@@ -42,6 +42,7 @@ public class OilButton : MonoBehaviour
         profits += moneyEarned;
         currentFunds += moneyEarned;
         MoneyUpdate.instance.updateMoney(currentFunds);
+        MoneyEarned.instance.updateEarnedMoney();
         print(currentFunds);
         if (currentFunds >= 2500*counter){
             curTemp ++;
