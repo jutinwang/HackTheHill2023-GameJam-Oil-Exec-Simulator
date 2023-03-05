@@ -972,8 +972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 294.38016}
-  m_SizeDelta: {x: 500, y: 80}
+  m_AnchoredPosition: {x: -346, y: 294.38016}
+  m_SizeDelta: {x: 680, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &589712575
 MonoBehaviour:
@@ -1008,7 +1008,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Total funds: $'
+  m_Text: 'Current balance: $'
 --- !u!222 &589712576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2291,8 +2291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259, y: 294.38016}
-  m_SizeDelta: {x: 800, y: 80}
+  m_AnchoredPosition: {x: 342, y: 294.38016}
+  m_SizeDelta: {x: 700, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288119363
 MonoBehaviour:
@@ -2554,7 +2554,7 @@ MonoBehaviour:
   profits: 0
   moneyEarned: 80
   counter: 0
-  temperatureIndicator: {fileID: 954633064}
+  tempBarFill: {fileID: 0}
   curTemp: 0
   maxTemp: 10
 --- !u!1 &1440128684
@@ -3009,7 +3009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1623331017
 MonoBehaviour:
   m_ObjectHideFlags: 0
