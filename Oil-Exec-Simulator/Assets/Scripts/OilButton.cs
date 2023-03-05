@@ -29,6 +29,8 @@ public class OilButton : MonoBehaviour
     //test function for testing onClick()
     public void Test(){
         counter++;
+        moneyEarned = moneyEarned + (160 * PopUpShop.instance.oilRigs) + (2000 * PopUpShop.instance.oilFields) + (20000 * PopUpShop.instance.shallowRigs) + (4800000 * PopUpShop.instance.deepSeaRigs);
+        moneyEarned += moneyEarned * PopUpShop.instance.refineryMultiplier;
         profits += moneyEarned;
         currentFunds += moneyEarned;
         MoneyUpdate.instance.updateMoney(currentFunds);
@@ -42,7 +44,7 @@ public class OilButton : MonoBehaviour
         }
     }
 
-    public void buyItem(float price){
+    public void buyItem(double price){
         currentFunds -= price;
     }
 }
