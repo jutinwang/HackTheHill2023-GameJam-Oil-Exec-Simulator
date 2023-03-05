@@ -43,7 +43,7 @@ public class OilButton : MonoBehaviour
         currentFunds += moneyEarned;
         MoneyUpdate.instance.updateMoney(currentFunds);
         print(currentFunds);
-        if (currentFunds >= 25000000*counter){
+        if (currentFunds >= 2500*counter){
             curTemp ++;
             counter++;
             if(counter >= 11){
@@ -51,7 +51,8 @@ public class OilButton : MonoBehaviour
                 AudioManager.instance.Play("elden");
             }
             temperatureIndicator.fillAmount = (float)curTemp/(float)maxTemp;
-            WorldMapManager.instance.changeImage(temperatureIndicator.fillAmount);
+            float temp = (float)curTemp/(float)maxTemp;
+            WorldMapManager.instance.changeImage(temp);
             IconManager.instance.changeImage();
             AudioManager.instance.Play("villager");
         }
