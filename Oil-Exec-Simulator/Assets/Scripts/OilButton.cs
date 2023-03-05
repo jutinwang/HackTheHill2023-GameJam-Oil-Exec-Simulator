@@ -13,7 +13,7 @@ public class OilButton : MonoBehaviour
 
     public int counter = 0;
 
-    public Image tempBarFill;
+    public Image temperatureIndicator;
 
     public int curTemp;
     public int maxTemp;
@@ -25,9 +25,8 @@ public class OilButton : MonoBehaviour
         print(profits);
         if (counter > 10){
             curTemp ++;
-            //tempBarFill.fillAmount = (float)curTemp/(float)maxTemp;
+            temperatureIndicator.fillAmount = (float)curTemp/(float)maxTemp;
             IconManager.instance.changeImage();
-            print("profits increased!");
             moneyEarned += 10.0;
             counter = 0;
         }
