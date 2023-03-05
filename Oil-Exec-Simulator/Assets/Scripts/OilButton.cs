@@ -18,6 +18,7 @@ public class OilButton : MonoBehaviour
         profits += moneyEarned;
         print(profits);
         if (counter > 10){
+            IconManager.instance.changeImage();
             print("profits increased!");
             moneyEarned += 10.0;
             counter = 0;

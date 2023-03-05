@@ -22,7 +22,7 @@ public class IconManager : MonoBehaviour
         newSprite = Sprite.Create(iconTextures[1], new Rect(0, 0, tester.width, tester.height), new Vector2(0.5f, 0.5f), 100.0f);
         print(tester == null);
         // if (this.gameObject.GetComponent<SpriteRenderer>().sprite != null){
-            instance.gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+        instance.gameObject.GetComponentInChildren<RawImage>().texture = tester;
         // }else{
         //     Debug.Log("here");
         // }
