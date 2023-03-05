@@ -9,7 +9,7 @@ public class PopUpShop : MonoBehaviour
     public int oilRigs = 0;
     public double oilRigPrice = 5000.00;
 
-    public double oilFieldPrice = 800000.00;
+    public double oilFieldPrice = 100000.00;
     public bool oilFieldBought = false;
     public int oilFields = 0;
 

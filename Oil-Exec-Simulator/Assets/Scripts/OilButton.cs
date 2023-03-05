@@ -56,10 +56,10 @@ public class OilButton : MonoBehaviour
         MoneyUpdate.instance.updateMoney(currentFunds);
         MoneyEarned.instance.updateEarnedMoney();
         print(currentFunds);
-        if (currentFunds >= 1250*counter){
+        if (currentFunds >= 7500*counter){
             textule.text = news[counter];
         }
-        if (currentFunds >= 2500*counter){
+        if (currentFunds >= 15000*counter){
             curTemp ++;
             counter++;
             if(counter >= 11){
