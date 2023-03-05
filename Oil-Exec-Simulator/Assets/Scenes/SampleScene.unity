@@ -4272,7 +4272,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-<<<<<<< HEAD
       - m_Target: {fileID: 1548517502}
         m_TargetAssemblyTypeName: ShopOpen, Assembly-CSharp
         m_MethodName: onClick
@@ -4280,24 +4279,11 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-=======
-      - m_Target: {fileID: 11500000, guid: f982e8cd9a0e0453ba0ba8c1f3096b2e, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
->>>>>>> cda56b12a120f89daa8d75c91e934c81880f4b72
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-<<<<<<< HEAD
         m_CallState: 2
-=======
-        m_CallState: 1
->>>>>>> cda56b12a120f89daa8d75c91e934c81880f4b72
 --- !u!114 &1969413944
 MonoBehaviour:
   m_ObjectHideFlags: 0
