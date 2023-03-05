@@ -9,3 +9,5 @@ This is our team's entry into <b>HACK THE HILL's Game Jam</b> presented by <b> M
 The theme was to create a game that talks about an ecological crises.
 
 We used <b>UNITY</b>, written in C# with animations and hand-drawn pixel graphics.
+
+![Logo](https://github.com/jutinwang/HackTheHill2023-GameJam-Oil-Exec-Simulator/blob/main/images/Gessoline.png)
