@@ -17,6 +17,12 @@ public class OilButton : MonoBehaviour
 
     public Image temperatureIndicator;
 
+    public static OilButton instance;
+
+    private void Awake(){
+        instance = this;
+    }
+
     public int curTemp;
     public int maxTemp;
 
@@ -24,6 +30,8 @@ public class OilButton : MonoBehaviour
     public void Test(){
         counter++;
         profits += moneyEarned;
+        currentFunds += moneyEarned;
+        MoneyUpdate.instance.updateMoney(currentFunds);
         print(profits);
         if (counter > 10){
             curTemp ++;
