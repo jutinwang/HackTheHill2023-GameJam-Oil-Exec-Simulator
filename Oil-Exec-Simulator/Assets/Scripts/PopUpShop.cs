@@ -34,8 +34,9 @@ public class PopUpShop : MonoBehaviour
             oilRigs++;
             OilButton.instance.changeMoneyEarned(oilRigs * 80.0);
             print("bought");
+            AudioManager.instance.Play("caching");
         }else{
-            AudioManager.instance.Play("chaching");
+            AudioManager.instance.Play("oof");
         }
     }
 
@@ -45,6 +46,9 @@ public class PopUpShop : MonoBehaviour
             oilFieldBought = true;
             OilButton.instance.changeMoneyEarned(2000.0);
             print("bought");
+            AudioManager.instance.Play("caching");
+        }else{
+            AudioManager.instance.Play("oof");
         }
     }
 
@@ -54,6 +58,9 @@ public class PopUpShop : MonoBehaviour
             shallowRigBought = true;
             OilButton.instance.changeMoneyEarned(20000.0);
             print("bought");
+             AudioManager.instance.Play("caching");
+        }else{
+            AudioManager.instance.Play("oof");
         }
     }
 
@@ -63,6 +70,9 @@ public class PopUpShop : MonoBehaviour
             deepSeaRigBought = true;
             OilButton.instance.changeMoneyEarned(1200000.0);
             print("bought");
+            AudioManager.instance.Play("caching");
+        }else{
+            AudioManager.instance.Play("oof");
         }
     }
 
@@ -71,7 +81,9 @@ public class PopUpShop : MonoBehaviour
             OilButton.instance.buyItem(refineryPrice);
             refineryMultiplier += 0.10;
             print("bought");
-
+            AudioManager.instance.Play("caching");
+        }else{
+            AudioManager.instance.Play("oof");
         }
     }
 

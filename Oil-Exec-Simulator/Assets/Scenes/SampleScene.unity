@@ -1695,7 +1695,7 @@ RectTransform:
   - {fileID: 518788559}
   - {fileID: 1215449594}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2212,7 +2212,6 @@ RectTransform:
   - {fileID: 1223315774}
   - {fileID: 1652301676}
   - {fileID: 1166611788}
-  - {fileID: 1825763374}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3540,7 +3539,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1548517502
 MonoBehaviour:
@@ -4290,8 +4289,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1048160307}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4410,8 +4409,36 @@ MonoBehaviour:
   - name: chaching
     clip: {fileID: 8300000, guid: 3946a6fc5ada346e6905e718abab0bf9, type: 3}
     mixer: {fileID: 0}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: oof
+    clip: {fileID: 8300000, guid: 96e7ffc2e5f94db4dbbac0baeee8eabc, type: 3}
+    mixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: villager
+    clip: {fileID: 8300000, guid: d746494ec25f946b99cc1b7a85165a7b, type: 3}
+    mixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: elden
+    clip: {fileID: 8300000, guid: 1dd201060ef86ef4eaae14e8bce5b77e, type: 3}
+    mixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: pick
+    clip: {fileID: 8300000, guid: ddcd1f1dfa73aa44098e95de12dfd69b, type: 3}
+    mixer: {fileID: 0}
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
 --- !u!1 &1866942466

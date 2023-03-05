@@ -38,18 +38,21 @@ public class OilButton : MonoBehaviour
 
     //test function for testing onClick()
     public void Test(){
+        AudioManager.instance.Play("pick");
         profits += moneyEarned;
         currentFunds += moneyEarned;
         MoneyUpdate.instance.updateMoney(currentFunds);
         print(currentFunds);
-        if (currentFunds >= 100000000*counter){
+        if (currentFunds >= 25000000*counter){
             curTemp ++;
             counter++;
             if(counter >= 11){
                 endingScreen.SetActive(true);
+                AudioManager.instance.Play("elden");
             }
             temperatureIndicator.fillAmount = (float)curTemp/(float)maxTemp;
             IconManager.instance.changeImage();
+            AudioManager.instance.Play("villager");
         }
     }
 
