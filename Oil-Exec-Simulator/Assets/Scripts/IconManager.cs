@@ -7,8 +7,6 @@ public class IconManager : MonoBehaviour
 {
     public Texture2D[] iconTextures;
     public Texture2D tester;
-    public Sprite newSprite;
-    public Image newImage;
     private int counter = 0;
 
     public static IconManager instance;

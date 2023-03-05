@@ -49,6 +49,7 @@ public class OilButton : MonoBehaviour
                 endingScreen.SetActive(true);
             }
             temperatureIndicator.fillAmount = (float)curTemp/(float)maxTemp;
+            WorldMapManager.instance.changeImage(temperatureIndicator.fillAmount);
             IconManager.instance.changeImage();
         }
     }
