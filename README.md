@@ -1,5 +1,5 @@
 # HackTheHill2023-GameJam-Oil-Exec-Simulator
-<h2>Team Gessoline is proud to present, Oil Tycoon: The best global warming PSA you'll ever experience!</h2>
+<h2>Team Gessoline aka Sleep Deprived Inc. is proud to present, Oiligarchy: The best global warming PSA you'll ever experience!</h2>
 
 Take control of an oil baron as you expand your company, grow your profits and watch the world burn around you.
 Your actions have concequences, maybe not for yourself, but for billions of others. There's no way to stop it,
