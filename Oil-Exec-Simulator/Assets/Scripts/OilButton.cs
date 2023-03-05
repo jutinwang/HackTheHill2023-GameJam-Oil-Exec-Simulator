@@ -51,6 +51,7 @@ public class OilButton : MonoBehaviour
                 AudioManager.instance.Play("elden");
             }
             temperatureIndicator.fillAmount = (float)curTemp/(float)maxTemp;
+            WorldMapManager.instance.changeImage(temperatureIndicator.fillAmount);
             IconManager.instance.changeImage();
             AudioManager.instance.Play("villager");
         }
